@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Pokedex EMGC</title>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="d-block d-sm-block d-md-block d-lg-none d-xl-none">
+
+        </div>
+        <div class="sticky-top">
+            <nav class="navbar navbar-dark bg-dark">
+                <a class="navbar-brand d-flex flex-row" href="#">
+                    <img src="./Assets/pokebola.svg" width="50" height="50" alt="" loading="lazy" id="home" class="d-block">
+                    <h1 class="ml-3 d-none d-lg-block d-xl-block">Pokedex</h1>
+                </a>
+                <div class="form-inline">
+                    <form class="form-inline p-2">
+                        <input class="form-control mr-sm-2" type="Nombre" placeholder="Nombre Pokemon"
+                            aria-label="Nombre" id="nameToSearch">
+                        <button class="btn btn-danger my-2 my-sm-0" type="submit" id="btnSearchByName">Buscar</button>
+                    </form>
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="Numero" placeholder="Numero Pokemon"
+                            aria-label="Search" id="numberToSearch">
+                        <button class="btn btn-danger my-2 my-sm-0" type="submit" id="btnSearchByNumber">Buscar</button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+    <main id="main">
+
+        <!-- <div class="container"> -->
+
+        <!-- Responsive -->
+
+        <div class="row d-flex justify-content-center" id="row">
+
+            <!-- <div class="card m-1" style="width: 12rem;border: 2px solid #ed5564;" id="idCard">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+                    class="card-img-top" alt="pokedex.img" id="imgLink">
+                <div class="card-body d-flex flex-row">
+                    <h5 class="card-title mr-1">pokedex.nombre</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">pokedex.type</li>
+                    <li class="list-group-item">pokedex.HP</li>
+                </ul>
+            </div> -->
+
+        </div>
+
+        <!-- </div> -->
+
+        <!-- MODAL -->
+        <div class="modal" tabindex="-1" role="dialog" id="modalSearch">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Mensaje de Sistema Pokedex</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p id="bodyText">-</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- <blockquote class="blockquote d-flex align-items-end flex-column m-3">
+        <footer class="blockquote-footer mb-0">
+            <div> Iconos diseñados por <a href="https://www.flaticon.es/autores/nikita-golubev" title="Nikita Golubev">Nikita Golubev</a> from <a href="https://www.flaticon.es/" title="Source Title">www.flaticon.es</a>
+            </div>
+        </footer>
+    </blockquote> -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="pokedex.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
